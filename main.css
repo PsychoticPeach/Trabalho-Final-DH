@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;500&display=swap");
 body,
 html {
   width: 100%;
@@ -6,10 +7,11 @@ html {
 }
 
 .background {
-  background-image: linear-gradient(to right, black, blue 400px, black 800px);
-  background-size: 800px 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1d1d1d), color-stop(50%, #131313), to(#1d1d1d));
+  background-image: linear-gradient(to right, #1d1d1d, #131313 50%, #1d1d1d);
+  background-size: 100%;
   background-position: 50% 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .container {
@@ -23,8 +25,173 @@ html {
   width: 100%;
 }
 
-.header {
-  background: white;
-  grid-column: 1/-1;
+.container-imagens {
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 8;
+  grid-row: 3/11;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  margin-top: 0.5%;
+  margin-left: 3%;
+}
+
+.logo h1 {
+  font-size: 350%;
+  font-family: "Red Rose", cursive;
+  color: rgba(240, 240, 240, 0.5);
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 4;
+  grid-column: 7/11;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.button-header {
+  display: block;
+  padding: 20px 30px;
+  outline: none;
+  color: rgba(240, 240, 240, 0.5);
+  background: inherit;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  font-weight: 100;
+  font-size: 150%;
+  font-family: "Red Rose", cursive;
+}
+
+.button-header::before,
+.button-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  background-color: #fff;
+  height: 100%;
+  opacity: .2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: #b1b1b1;
+}
+
+.button-header::after {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.button-header:hover::before,
+.button-header:hover::after {
+  left: 100%;
+}
+
+.button-header:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.imagem-1 {
+  height: 141.66px;
+}
+
+.imagem1 {
+  border-radius: 3px;
+  width: 340px;
+  height: 141.66px;
+}
+
+.imagem-2 {
+  height: 187.5px;
+}
+
+.imagem2 {
+  width: 300px;
+  height: 187.5px;
+}
+
+.imagem-3 {
+  height: 140.63px;
+}
+
+.imagem3 {
+  width: 250px;
+}
+
+.imagem-4 {
+  height: 104.16px;
+}
+
+.imagem4 {
+  width: 250px;
+}
+
+.imagem-5 {
+  height: 156.25px;
+}
+
+.imagem5 {
+  width: 250px;
+}
+
+.imagem-6 {
+  height: 104.16px;
+}
+
+.imagem6 {
+  width: 250px;
+}
+
+.imagem7 {
+  width: 250px;
+}
+
+.imagem8 {
+  width: 250px;
+}
+
+.imagem9 {
+  width: 250px;
 }
 /*# sourceMappingURL=main.css.map */
