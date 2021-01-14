@@ -210,14 +210,3 @@ html {
     // neon color
     --neon-text-color: rgba(255, 81, 0, 0.521);
 }
-
-.imagem {
-    transition: filter .2s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%)
-}
-
-.imagem:hover {
-    -webkit-filter: grayscale(30%);
-    filter: grayscale(30%);
-}
