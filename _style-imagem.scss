@@ -1,0 +1,54 @@
+.background {
+    background-image: linear-gradient(to right, rgb(29, 29, 29), rgb(19, 19, 19) 50%, rgb(29, 29, 29));
+    background-size: 100%;
+    background-position: 50% 100%;
+    background-repeat: repeat;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 959px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    margin-left: 3%;
+    h1 {
+        font-size: 350%;
+        font-family: $fontlogo;
+        color: rgba(240, 240, 240, 0.500);
+        animation: flicker 1.5s infinite alternate;
+    }
+    h1::-moz-selection {
+        color: var(--neon-text-color);
+    }
+    h1::selection {
+        color: var(--neon-text-color);
+    }
+    h1:focus {
+        outline: none;
+    }
+    @keyframes flicker {
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+            text-shadow: -0.2rem -0.2rem 20px rgb(110, 110, 110), 0 0 5px var(--neon-text-color), 0 0 8px var(--neon-text-color), 0 0 10px var(--neon-text-color), 0 0 15px var(--neon-text-color);
+            box-shadow: 0 0 2px #fff, inset 0 0 2px #fff, 0 0 4px var(--neon-border-color), inset 0 0 4px var(--neon-border-color), 0 0 4px var(--neon-border-color), inset 0 0 4px var(--neon-border-color);
+        }
+        20%,
+        24%,
+        55% {
+            text-shadow: none;
+        }
+    }
+}
