@@ -72,6 +72,7 @@ html {
     flex-wrap: wrap;
     grid-column: 1/4;
     margin-left: 3%;
+    cursor: pointer;
     h1 {
         font-size: 350%;
         font-family: $fontlogo;
@@ -129,6 +130,10 @@ html {
     margin-right: 5%;
 }
 
+.button {
+    text-decoration: none;
+}
+
 .button-header {
     display: block;
     padding: 20px 30px;
@@ -175,6 +180,21 @@ html {
 
 .button-header:active {
     transform: translateY(2px);
+}
+
+.imagem {
+    -webkit-transition: -webkit-filter .2s ease-in-out;
+    transition: -webkit-filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
+    transition: filter .2s ease-in-out, -webkit-filter .2s ease-in-out;
+    -webkit-filter: contrast(100%);
+    filter: contrast(100%);
+}
+
+.imagem:hover {
+    transform: translateY(3px);
+    -webkit-filter: contrast(135%);
+    filter: contrast(135%);
 }
 
 .imagem-1 {
