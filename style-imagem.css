@@ -27,7 +27,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 20% 20% 20% 30%;
+    grid-template-rows: 11% 20% 20% 20% 30%;
     height: 100%;
     width: 100%;
 }

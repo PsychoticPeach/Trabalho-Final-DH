@@ -284,14 +284,95 @@ h1:focus {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(23, 23, 23);
+    background: #171717;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: rgba(36, 36, 36, 0.507);
+    background: #24242481;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000096;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    margin-bottom: 1%;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+}
+
+.imagem:hover .overlay {
+    height: 180%;
+    opacity: 1;
+}
+
+// coração
+.heart {
+    content: '&#9829';
+}
+
+.heart:active {
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    background-color: red;
+    display: inline-block;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+}
+
+.heart:before {
+    top: -5px;
+    left: 0;
+}
+
+.heart:after {
+    left: 5px;
+    top: 0;
+}
+
+.btn {
+    border: none;
+    outline: none;
 }
