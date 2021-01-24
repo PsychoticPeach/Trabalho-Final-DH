@@ -8,7 +8,7 @@ html {
 
 .imagem {
     margin: 5% 0% 0% 10%;
-    width: 75%;
+    width: 85%;
     margin: 3% 0 0 5%;
     transition: transform 0.25s ease;
     cursor: zoom-in;
@@ -27,34 +27,39 @@ html {
 .container {
     display: grid;
     grid-template-columns: 15% 85%;
-    grid-template-rows: 11% 20% 20% 20% 30%;
+    grid-template-rows: 11% 9% 10% 10% 5% 5% 10% 10% 10% 10% 10%;
     height: 100%;
     width: 100%;
 }
 
 .container-2 {
+    height: 100%;
+    width: 100%;
     display: flex;
     grid-column: 1/2;
-    grid-row: 2/6;
+    grid-row: 2/12;
     box-shadow: 5px 5px 15px rgb(19, 19, 19);
 }
 
 .container-3 {
+    height: 100%;
+    width: 100%;
     display: flex;
     grid-column: 1/2;
-    grid-row: 3/6;
+    grid-row: 4/12;
     /* box-shadow: 10px 10px 6px rgba(120, 151, 36, 0.534); */
 }
 
 .container-4 {
+    width: 100%;
     background-color: rgb(23, 23, 23);
     grid-column: 1/-1;
     box-shadow: 5px 5px 15px rgb(19, 19, 19);
 }
 
 .container-imagem {
-    grid-column: 2;
-    grid-row: 2/6;
+    grid-column: 2/12;
+    grid-row: 2/12;
     overflow: auto;
     width: 100%;
     height: 100%;
@@ -192,6 +197,21 @@ h1:focus {
 .row-2 {
     margin-top: 20%;
     margin-left: 15%;
+    width: 100%;
+}
+
+.row-3 {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.row-4 {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 6;
 }
 
 :root {
@@ -209,10 +229,19 @@ h3 {
 }
 
 h2 {
+    position: absolute;
     font-weight: 100;
     font-size: 100%;
     color: rgba(240, 240, 240, 0.500);
     font-family: 'Red Rose', cursive;
+}
+
+.fav {
+    margin-left: 2%;
+}
+
+.like {
+    margin-left: 2%;
 }
 
 .button {
@@ -247,13 +276,6 @@ input[type=checkbox]:checked~label>img {
     cursor: zoom-out;
 }
 
-// like btn
-// #slideone {
-//     width: 80px;
-//     height: 30px;
-//     background: rgb(250, 250, 250);
-//     position: absolute;
-// }
 .like-btn {
     margin-right: 15%;
     position: absolute;
@@ -265,10 +287,14 @@ input[type=checkbox]:checked~label>img {
     z-index: 2;
 }
 
+.lable2 {
+    margin-left: 50%;
+}
+
 .fa-heart {
+    margin-top: 6%;
     box-sizing: border-box;
     position: relative;
-    margin-right: 5%;
     -webkit-text-stroke: 2px rgba(110, 110, 110, 0.795);
     color: rgba(110, 110, 110, 0.116);
     transition: all ease-in-out;
@@ -307,27 +333,23 @@ input[type=checkbox]:checked~label>img {
     }
 }
 
-// add favorites
-// #slideotwo {
-//     width: 80px;
-//     height: 30px;
-//     background: #333;
-//     position: relative;
-// }
 #fav-btn {
     position: relative;
     background-color: inherit;
     width: 6%;
-    height: 50%;
     transition: all 0.5s;
     opacity: 0;
     z-index: 2;
 }
 
+.lable1 {
+    margin-top: 5%;
+    margin-left: 70%;
+}
+
 .fa-star {
     box-sizing: border-box;
     position: relative;
-    margin-right: 5%;
     -webkit-text-stroke: 2px rgba(110, 110, 110, 0.795);
     color: rgba(110, 110, 110, 0.116);
     transition: all ease-in-out;
