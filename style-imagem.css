@@ -47,7 +47,6 @@ html {
     display: flex;
     grid-column: 1/2;
     grid-row: 4/12;
-    /* box-shadow: 10px 10px 6px rgba(120, 151, 36, 0.534); */
 }
 
 .container-4 {
@@ -65,6 +64,14 @@ html {
     height: 100%;
 }
 
+// .container-fav {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: flex-start;
+//     justify-items: center;
+//     width: 70%;
+//     height: 50%;
+// }
 .header {
     display: flex;
     justify-content: flex-end;
@@ -201,14 +208,22 @@ h1:focus {
 }
 
 .row-3 {
+    margin-left: 15%;
     width: 100%;
     display: flex;
     justify-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     grid-column: 1;
     grid-row: 5;
 }
 
 .row-4 {
+    margin-left: 15%;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     grid-column: 1;
     grid-row: 6;
@@ -220,6 +235,7 @@ h1:focus {
 
 h4 {
     font-size: 200%;
+    margin: 0;
 }
 
 h3 {
@@ -229,21 +245,27 @@ h3 {
 }
 
 h2 {
-    position: absolute;
+    margin: 0;
     font-weight: 100;
     font-size: 100%;
     color: rgba(240, 240, 240, 0.500);
     font-family: 'Red Rose', cursive;
 }
 
-.fav {
-    margin-left: 2%;
+// .fav {
+//     font-size: 100%;
+// }
+h4 {
+    font-weight: 100;
+    font-family: 'Red Rose', cursive;
+    font-size: 100%;
+    color: rgba(240, 240, 240, 0.500);
+    ;
 }
 
-.like {
-    margin-left: 2%;
-}
-
+// .like {
+//     margin-left: 2%;
+// }
 .button {
     text-decoration: none;
     margin: 1% 3% 1% 0;
@@ -287,14 +309,13 @@ input[type=checkbox]:checked~label>img {
     z-index: 2;
 }
 
-.lable2 {
-    margin-left: 50%;
-}
-
+// .lable2 {
+//     margin-left: 50%;
+// }
 .fa-heart {
-    margin-top: 6%;
+    margin-left: 1%;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     -webkit-text-stroke: 2px rgba(110, 110, 110, 0.795);
     color: rgba(110, 110, 110, 0.116);
     transition: all ease-in-out;
@@ -336,20 +357,17 @@ input[type=checkbox]:checked~label>img {
 #fav-btn {
     position: relative;
     background-color: inherit;
-    width: 6%;
     transition: all 0.5s;
     opacity: 0;
     z-index: 2;
 }
 
-.lable1 {
-    margin-top: 5%;
-    margin-left: 70%;
-}
+.lable1 {}
 
 .fa-star {
+    margin-left: 1%;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     -webkit-text-stroke: 2px rgba(110, 110, 110, 0.795);
     color: rgba(110, 110, 110, 0.116);
     transition: all ease-in-out;
